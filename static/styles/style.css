@@ -1,15 +1,14 @@
 .button-container {
     width: 100%;
-    display: flex;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgb(255, 149, 0);
-    border-radius: 5px;
+    border-radius: 0px;
     display: flex;
-    display: 100%;
     justify-content: flex-start;
     gap: 10px;
     row-gap: 1opx;
     align-items: center;
+    position: fixed;
 
 }
 
@@ -38,7 +37,9 @@
 }
 .main-imagine {
     display: flex;
+    padding-top: 20px; 
     width: 100%;
+    padding-bottom: 20px;
 }
 .right-button {
     position: relative;
@@ -60,6 +61,7 @@
 
 .row {
     font-size: 28px;
+    padding-bottom: 20px;
 }
 
 .container-2 {
@@ -67,23 +69,73 @@
     border: 0.5px;
     border-style: dashed;
     border-color: red;
+    align-items: center;
 }
 
 .text-1 {
-    font-size: 24px;
+    font-size: 16px;
     display: flex;
     width: 50%;
-    padding: 10px;
-    border-left: 0px;
-    border-top: 0px;
-    border-width: 0px;
-    border-right: 0.5px;
-    border-style: dashed;
-    border-color: red;
+    padding-left: 10px;
+    flex-direction: column;
 }
 
 .video-1 {
     display: flex;
-    width: 100%;
-    
+    width: 800px;
+    border-left: 0.5px;
+    border-top: 0px;
+    border-width: 0px;
+    border-right: 0px;
+    border-style: dashed;
+    border-color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+html body {
+    margin: 0px;
+}
+
+.dropdown {
+    position: relative; /* Позиционирование для дочерних элементов */
+    display: inline-block; /* Чтобы панель была на одной линии с кнопкой */
+}
+
+/* Стили для кнопки */
+.dropdown-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Стили для панели */
+.dropdown-panel {
+    display: none; /* Скрываем панель по умолчанию */
+    position: absolute; /* Позиционируем панель относительно кнопки */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Находится поверх других элементов */
+}
+
+/* Показываем панель при наведении на контейнер */
+.dropdown:hover .dropdown-panel {
+    display: block; /* Показываем панель при наведении на родительский элемент */
+}
+
+.dropdown-panel ul {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-panel li {
+    padding: 10px; /* Отступы внутри элементов списка */
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+}
+
+.dropdown-panel li:hover {
+    background-color: #f0f0f0; /* Подсветка при наведении */
 }
