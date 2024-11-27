@@ -243,3 +243,276 @@ left: 100px;
     color: white; /* Poți schimba culoarea textului */
     font-size: 20px; /* Ajustează dimensiunea textului */
     font-weight: bold; /* Poți schimba stilul fontului */
+}
+
+.news-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.news-page .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-page .header {
+    background-color: #e72802;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.news-page .header .logo {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.news-page .nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.news-page .nav a:hover {
+    color: #ffdb4d;
+}
+
+/* Другие стили страницы */
+.news-page .main-content {
+    padding: 40px 0;
+}
+
+.news-page .news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-page .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.news-img {
+    height: 300px;
+}
+
+/* Toate stilurile sunt aplicate doar paginii .career-page */
+.career-page {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Hero header */
+.career-page .hero {
+    background-color: #fc1e0a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+.career-page .hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Secțiuni */
+.career-page .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.career-page .about, 
+.career-page .skills, 
+.career-page .contact {
+    background: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.career-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff2c18;
+}
+.career-page p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Imagini în secțiuni */
+.career-page .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.career-page .content img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de abilități */
+.career-page .skills ul {
+    list-style: none;
+    padding: 0;
+}
+.career-page .skills li {
+    background: #e7f3fe;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.career-page footer {
+    background-color: #fb2418;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+.career-page footer p {
+    font-size: 0.9rem;
+}
+
+/* Link-uri */
+.career-page a {
+    color: #fd1616;
+    text-decoration: none;
+}
+.career-page a:hover {
+    text-decoration: underline;
+}
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .about, .services {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about img, .services img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .services {
+    background: #f9f9f9;
+  }
+  
+  .service {
+    margin: 20px 0;
+  }
+  
+  .service img {
+    width: 750px;
+    height: 400px;
+    border-radius: 20%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.toyota-newsroom {
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    padding: 20px;
+    background-color: #e31c23;
+    color: #fff;
+}
+
+header .logo img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.hero {
+    padding: 20px;
+    background-color: #f0eded;
+}
+
+.news {
+    padding: 20px;
+}
+
+.news article {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.news article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
