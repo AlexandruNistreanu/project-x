@@ -107,8 +107,9 @@ html body {
 /* Стили для кнопки */
 .dropdown-button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
+    
 }
 
 /* Стили для панели */
@@ -138,22 +139,107 @@ html body {
 }
 
 .dropdown-panel li:hover {
-    background-color: #f0f0f0; /* Подсветка при наведении */
+    background-color: #c09090; /* Подсветка при наведении */
 }
 
 .img-box {
     display: flex;
     width: 100%;
     gap: 100px;
+    border-style: dashed;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.img-3 {
+.img-1  {
     display: flex;
     width: 300px;
+    margin: 0px;
+
 }
 
 .img-2 {
     display: flex;
     width: 300px;
-    padding-left: 100px;
+    border-style: dashed;
 }
+
+
+
+.img-3 {
+    display: flex;
+    width: 375px;
+
+}
+
+.history-img {
+position: relative;
+left: 100px;
+}
+
+/* Asigură-te că stilurile se aplică doar galeriei specificate */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite fotografiilor să se aranjeze pe mai multe rânduri */
+    gap: 30px; /* Spațiere între fotografii */
+    justify-content: center; /* Aliniază centrul conținutului */
+    padding: 20px;
+  }
+  
+  .photo-gallery .photo-item {
+    text-align: center;
+    max-width: 300px; /* Dimensiune mai mare pentru fotografii */
+  }
+  
+  .photo-gallery .photo-item img {
+    width: 100%; /* Imaginea se ajustează la container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-gallery .photo-item p {
+    margin-top: 10px;
+    font-size: 16px; /* Font mai mare */
+    color: #444; /* Text mai întunecat pentru vizibilitate */
+    word-wrap: break-word;
+  }
+  
+ /* Stiluri pentru containerul care conține imaginile */
+.image-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Stilul pentru prima imagine care ocupă 50% din lățimea containerului */
+.image1 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Containerul pentru celelalte două imagini */
+.side-images {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+/* Stilul pentru fiecare din cele două imagini din partea dreaptă */
+.image2, .image3 {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-bottom {
+    position: absolute;
+    bottom: 10px; /* Poziționează textul la 10px de partea de jos a imaginii */
+    left: 50%;
+    transform: translateX(-50%); /* Centerază textul pe orizontală */
+    color: white; /* Poți schimba culoarea textului */
+    font-size: 20px; /* Ajustează dimensiunea textului */
+    font-weight: bold; /* Poți schimba stilul fontului */
