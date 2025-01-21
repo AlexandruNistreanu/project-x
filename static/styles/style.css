@@ -8,7 +8,7 @@
     gap: 10px;
     row-gap: 1opx;
     align-items: center;
-    position: fixed;
+
 
 }
 
@@ -43,7 +43,7 @@
 }
 .right-button {
     position: relative;
-    left: 700px;
+    left: 900px;
     padding: 10px 20px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -100,8 +100,8 @@ html body {
 }
 
 .dropdown {
-    position: relative; /* Позиционирование для дочерних элементов */
-    display: inline-block; /* Чтобы панель была на одной линии с кнопкой */
+    position: relative; 
+    display: inline-block; 
 }
 
 /* Стили для кнопки */
@@ -112,35 +112,8 @@ html body {
     
 }
 
-/* Стили для панели */
-.dropdown-panel {
-    display: none; /* Скрываем панель по умолчанию */
-    position: absolute; /* Позиционируем панель относительно кнопки */
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Находится поверх других элементов */
-}
 
-/* Показываем панель при наведении на контейнер */
-.dropdown:hover .dropdown-panel {
-    display: block; /* Показываем панель при наведении на родительский элемент */
-}
 
-.dropdown-panel ul {
-    list-style: none; /* Убираем маркеры списка */
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-panel li {
-    padding: 10px; /* Отступы внутри элементов списка */
-    cursor: pointer; /* Указываем, что элемент кликабельный */
-}
-
-.dropdown-panel li:hover {
-    background-color: #c09090; /* Подсветка при наведении */
-}
 
 .img-box {
     display: flex;
@@ -179,22 +152,22 @@ position: relative;
 left: 100px;
 }
 
-/* Asigură-te că stilurile se aplică doar galeriei specificate */
+
 .photo-gallery {
     display: flex;
-    flex-wrap: wrap; /* Permite fotografiilor să se aranjeze pe mai multe rânduri */
-    gap: 30px; /* Spațiere între fotografii */
-    justify-content: center; /* Aliniază centrul conținutului */
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
     padding: 20px;
   }
   
   .photo-gallery .photo-item {
     text-align: center;
-    max-width: 300px; /* Dimensiune mai mare pentru fotografii */
+    max-width: 300px; 
   }
   
   .photo-gallery .photo-item img {
-    width: 100%; /* Imaginea se ajustează la container */
+    width: 100%; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
@@ -202,33 +175,33 @@ left: 100px;
   
   .photo-gallery .photo-item p {
     margin-top: 10px;
-    font-size: 16px; /* Font mai mare */
-    color: #444; /* Text mai întunecat pentru vizibilitate */
+    font-size: 16px; 
+    color: #444; 
     word-wrap: break-word;
   }
   
- /* Stiluri pentru containerul care conține imaginile */
+
 .image-container {
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
-/* Stilul pentru prima imagine care ocupă 50% din lățimea containerului */
+
 .image1 {
     width: 50%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Containerul pentru celelalte două imagini */
+
 .side-images {
     display: flex;
     width: 50%;
     height: 100%;
 }
 
-/* Stilul pentru fiecare din cele două imagini din partea dreaptă */
+
 .image2, .image3 {
     width: 50%;
     height: 100%;
@@ -237,12 +210,12 @@ left: 100px;
 
 .text-bottom {
     position: absolute;
-    bottom: 10px; /* Poziționează textul la 10px de partea de jos a imaginii */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%); /* Centerază textul pe orizontală */
-    color: white; /* Poți schimba culoarea textului */
-    font-size: 20px; /* Ajustează dimensiunea textului */
-    font-weight: bold; /* Poți schimba stilul fontului */
+    color: white; 
+    font-size: 20px;
+    font-weight: bold; 
 }
 
 .news-page {
@@ -283,7 +256,7 @@ left: 100px;
     color: #ffdb4d;
 }
 
-/* Другие стили страницы */
+
 .news-page .main-content {
     padding: 40px 0;
 }
@@ -309,7 +282,7 @@ left: 100px;
     height: 300px;
 }
 
-/* Toate stilurile sunt aplicate doar paginii .career-page */
+
 .career-page {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -317,7 +290,6 @@ left: 100px;
     background-color: #f5f5f5;
 }
 
-/* Hero header */
 .career-page .hero {
     background-color: #fc1e0a;
     color: white;
@@ -332,7 +304,7 @@ left: 100px;
     border-radius: 10px;
 }
 
-/* Secțiuni */
+
 .career-page .container {
     width: 90%;
     max-width: 1200px;
@@ -359,7 +331,6 @@ left: 100px;
     font-size: 1rem;
 }
 
-/* Imagini în secțiuni */
 .career-page .content {
     display: flex;
     align-items: center;
@@ -372,7 +343,7 @@ left: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Lista de abilități */
+
 .career-page .skills ul {
     list-style: none;
     padding: 0;
@@ -384,7 +355,7 @@ left: 100px;
     border-radius: 5px;
 }
 
-/* Footer */
+
 .career-page footer {
     background-color: #fb2418;
     color: white;
@@ -396,7 +367,7 @@ left: 100px;
     font-size: 0.9rem;
 }
 
-/* Link-uri */
+
 .career-page a {
     color: #fd1616;
     text-decoration: none;
@@ -405,7 +376,7 @@ left: 100px;
     text-decoration: underline;
 }
 
-/* style.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -511,8 +482,5 @@ header .logo img {
     border-radius: 5px;
 }
 
-footer {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
+
+
